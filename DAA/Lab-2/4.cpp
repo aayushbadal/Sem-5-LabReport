@@ -2,7 +2,7 @@
 #include<iostream>
 using namespace std;
 int sequentialsearch(int arr[],int n,int target){
-    for(int i=1;i<n;i++){
+    for(int i=0;i<n;i++){
         if(arr[i]==target)
             return i;
     }
@@ -20,7 +20,7 @@ int main(){
     cin>>target;
     result=sequentialsearch(arr,n,target);
     if(result==-1)
-        cout<<"The target is not in the array:";
+        cout<<"The target is not in the array.";
     else
         cout<<"The target "<<target<<" found at index "<<result<<".";
     return 0;
