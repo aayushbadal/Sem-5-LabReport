@@ -1,0 +1,1 @@
+//2. Write C program to generate function of S-Box in DES
