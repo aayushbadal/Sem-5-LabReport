@@ -1,1 +1,1 @@
-//2. Write a c program to implement play fair cipher
+//2. Write a c program to implement play fair cipher.
