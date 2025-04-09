@@ -26,7 +26,6 @@ int main() {
             rail[i][j] = ' ';
         }
     }
-
     row = 0;
     direction = 1;  // 1 means moving down, -1 means moving up
 

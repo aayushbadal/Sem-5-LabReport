@@ -33,6 +33,7 @@ int main() {
     key_modified[i] = '\0';
 
     // Step 2: Fill the matrix with the key letters first
+    
     k = 0;
     for (i = 0; i < strlen(key_modified); i++) {
         if (key_modified[i] != 'J' && !visited[key_modified[i] - 'A']) {

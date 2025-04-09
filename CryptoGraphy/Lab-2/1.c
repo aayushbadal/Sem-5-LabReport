@@ -34,5 +34,4 @@ int main(){
     }
     printf("Plaintext:%s\n",pt);
     return 0;
-
 }
