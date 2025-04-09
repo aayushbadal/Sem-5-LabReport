@@ -12,6 +12,10 @@ int main(){
     ptlen=strlen(pt);
     printf("Enter key of length %d:",ptlen);
     scanf("%s",key);
+    if(strlen(key) != ptlen){
+        printf("The length of key is not equal to length of plaintext, They must be equal (i.e %d).",ptlen);
+        return 0;
+    }
 
     //encryption:
     printf("\n--------Encryption----------\n");
