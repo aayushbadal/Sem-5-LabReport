@@ -17,15 +17,15 @@ int main(){
     printf("\n--------Encryption----------\n");
     printf("PlainText:%s\nKey:%s\n",pt,key);
     for(i=0;i<strlen(pt);i++){
-        ct[i]=(((pt[i]-97)+(mkey[i]-97))%26)+65;
+        ct[i]=(((pt[i]-97)+(mkey[i]-97))%26)+97;
     }
     printf("Ciphertext:%s\n",ct);
 
     printf("\n----Decryption-----\n");
     printf("CipherText:%s\nKey:%s\n",ct,key);
     for(i=0;i<strlen(ct);i++){
-        ct[i]=(((pt[i]-65)-(mkey[i]-65))%26)+97;
+        pt[i]=(((ct[i]-97)-(mkey[i]-97)+26)%26)+97;
     }
-    printf("Plaintext:%s\n",&pt);
+    printf("Plaintext:%s\n",pt);
     return 0;
 }
