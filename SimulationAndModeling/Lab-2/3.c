@@ -1,4 +1,5 @@
-// Apply all  LCM(Additive, Mixed or Multiplicative ) based on the input values of a and c determine the type and generate the random numbers based on that. In this case you can provide a choice to user which method they want to chose. Based on the choice you should apply the respective formules
+// 3. Apply all  LCM(Additive, Mixed or Multiplicative ) based on the input values of a and c determine the type and generate 
+//    the random numbers based on that. In this case you can provide a choice to user which method they want to chose. Based on the choice you should apply the respective formules
 #include<stdio.h>
 
 int main() {
