@@ -173,8 +173,11 @@ int main() {
 
 
     // Output the ciphertext
+    printf("-------------Encryption-----------");
+
     printf("\nCiphertext: %s\n", ciphertext);
     //plaintext output
+    printf("-------------Decryption-----------");
     printf("\nPlaintext: %s\n",dplaintext);
 
     return 0;

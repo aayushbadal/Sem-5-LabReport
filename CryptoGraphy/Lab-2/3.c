@@ -46,6 +46,7 @@ int main() {
     }
 
     // Printing the cipher text from the rail matrix row by row
+    printf("-------------Encryption-----------\n");
     printf("Cipher text: ");
     for (int i = 0; i < rails; i++) {
         for (int j = 0; j < length; j++) {
@@ -97,7 +98,7 @@ int main() {
         row += direction;
     }
     decryptedtext[k] = '\0';  // Null-terminate the decrypted string
-
+    printf("-------------Decryption-----------\n");
     printf("Decrypted message: %s\n", decryptedtext);
     return 0;
 }
