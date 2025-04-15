@@ -11,14 +11,14 @@ find the D,D=max{D+,D-}
 ask tabulated value Dt
 compare D and Dt if D  is less than Dt, numbers are uniformly distributed
 
-Inputs: 0.44 0.81 0.14 0.05 0.93
-        0.24 0.89 0.11 0.61 0.23 0.86 0.41 0.64 0.50 0.65
+Inputs: 0.44 0.81 0.14 0.05 0.93  (tabulated value :0.56327)
+        0.24 0.89 0.11 0.61 0.23 0.86 0.41 0.64 0.50 0.65   (tabulated value :0.40925)
 **/
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
 
-#define N 5 // Number of random numbers
+#define N 10 // Number of random numbers
 
 // Selection Sort for float array
 void selectionSort(float arr[], int n)
