@@ -1,0 +1,50 @@
+
+Code:
+
+myStorage STORAGE 3
+Beg GENERATE 6
+ENTER myStorage
+ADVANCE 12,9
+LEAVE myStorage
+TRANSFER 0.1,ACC,REJ
+ACC TERMINATE 1
+REJ TERMINATE 1
+
+START 1000
+
+
+After Simulation Output:
+
+
+              GPSS World Simulation Report - STORAGE.5.1
+
+
+                   Wednesday, June 11, 2025 11:20:36  
+
+           START TIME           END TIME  BLOCKS  FACILITIES  STORAGES
+                0.000           6005.106     7        0          1
+
+
+              NAME                       VALUE  
+          ACC                             6.000
+          BEG                             1.000
+          MYSTORAGE                   10000.000
+          REJ                             7.000
+
+
+ LABEL              LOC  BLOCK TYPE     ENTRY COUNT CURRENT COUNT RETRY
+BEG                 1    GENERATE          1000             0       0
+                    2    ENTER             1000             0       0
+                    3    ADVANCE           1000             0       0
+                    4    LEAVE             1000             0       0
+                    5    TRANSFER          1000             0       0
+ACC                 6    TERMINATE          904             0       0
+REJ                 7    TERMINATE           96             0       0
+
+
+STORAGE            CAP. REM. MIN. MAX.  ENTRIES AVL.  AVE.C. UTIL. RETRY DELAY
+ MYSTORAGE           3    3   0     3     1000   1    1.981  0.660    0    0
+
+
+FEC XN   PRI         BDT      ASSEM  CURRENT  NEXT  PARAMETER    VALUE
+  1001    0        6006.000   1001      0      1

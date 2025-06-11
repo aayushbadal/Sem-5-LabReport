@@ -1,0 +1,53 @@
+//Lab Work in GPSS Student Version.
+
+Code:
+
+GENERATE 5
+SEIZE INSPECTOR
+ADVANCE 4,3
+RELEASE INSPECTOR
+TRANSFER 0.1,ACC,REJ
+ACC TERMINATE 1
+REJ TERMINATE 1
+
+START 1000
+
+
+After Simulation Output:
+
+
+              GPSS World Simulation Report - ADVANCE.8.1
+
+
+                   Wednesday, June 11, 2025 11:18:55  
+
+           START TIME           END TIME  BLOCKS  FACILITIES  STORAGES
+                0.000           5006.992     7        1          0
+
+
+              NAME                       VALUE  
+          ACC                             6.000
+          INSPECTOR                   10000.000
+          REJ                             7.000
+
+
+ LABEL              LOC  BLOCK TYPE     ENTRY COUNT CURRENT COUNT RETRY
+                    1    GENERATE          1001             0       0
+                    2    SEIZE             1001             1       0
+                    3    ADVANCE           1000             0       0
+                    4    RELEASE           1000             0       0
+                    5    TRANSFER          1000             0       0
+ACC                 6    TERMINATE          906             0       0
+REJ                 7    TERMINATE           94             0       0
+
+
+FACILITY         ENTRIES  UTIL.   AVE. TIME AVAIL. OWNER PEND INTER RETRY DELAY
+ INSPECTOR         1001    0.782       3.911  1     1001    0    0     0      0
+
+
+CEC XN   PRI          M1      ASSEM  CURRENT  NEXT  PARAMETER    VALUE
+  1001    0        5005.000   1001      2      3
+
+
+FEC XN   PRI         BDT      ASSEM  CURRENT  NEXT  PARAMETER    VALUE
+  1002    0        5010.000   1002      0      1

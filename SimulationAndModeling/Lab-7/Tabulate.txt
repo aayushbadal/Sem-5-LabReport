@@ -1,0 +1,74 @@
+
+Code:
+
+myStorage STORAGE 3
+myTable TABLE M1,5,5,10
+Beg GENERATE 5
+QUEUE 1
+ENTER myStorage
+DEPART 1
+MARK
+ADVANCE 12,9
+LEAVE myStorage
+TABULATE myTable
+TRANSFER 0.1,ACC,REJ
+ACC TERMINATE 1
+REJ TERMINATE 1
+
+START 1000
+
+After Simulation Output:
+
+
+              GPSS World Simulation Report - TABULATE.5.1
+
+
+                   Wednesday, June 11, 2025 11:24:10  
+
+           START TIME           END TIME  BLOCKS  FACILITIES  STORAGES
+                0.000           5010.028    11        0          1
+
+
+              NAME                       VALUE  
+          ACC                            10.000
+          BEG                             1.000
+          MYSTORAGE                   10000.000
+          MYTABLE                     10001.000
+          REJ                            11.000
+
+
+ LABEL              LOC  BLOCK TYPE     ENTRY COUNT CURRENT COUNT RETRY
+BEG                 1    GENERATE          1002             0       0
+                    2    QUEUE             1002             0       0
+                    3    ENTER             1002             0       0
+                    4    DEPART            1002             0       0
+                    5    MARK              1002             0       0
+                    6    ADVANCE           1002             2       0
+                    7    LEAVE             1000             0       0
+                    8    TABULATE          1000             0       0
+                    9    TRANSFER          1000             0       0
+ACC                10    TERMINATE          894             0       0
+REJ                11    TERMINATE          106             0       0
+
+
+QUEUE              MAX CONT. ENTRY ENTRY(0) AVE.CONT. AVE.TIME   AVE.(-0) RETRY
+ 1                   2    0   1002    756     0.108      0.540      2.201   0
+
+
+STORAGE            CAP. REM. MIN. MAX.  ENTRIES AVL.  AVE.C. UTIL. RETRY DELAY
+ MYSTORAGE           3    1   0     3     1002   1    2.348  0.783    0    0
+
+
+TABLE              MEAN    STD.DEV.       RANGE           RETRY FREQUENCY CUM.%
+ MYTABLE          11.763    5.221                           0
+                                       _  -        5.000           118    11.80
+                                   5.000  -       10.000           281    39.90
+                                  10.000  -       15.000           277    67.60
+                                  15.000  -       20.000           275    95.10
+                                  20.000  -       25.000            49   100.00
+
+
+FEC XN   PRI         BDT      ASSEM  CURRENT  NEXT  PARAMETER    VALUE
+  1001    0        5013.000   1001      6      7
+  1003    0        5015.000   1003      0      1
+  1002    0        5021.482   1002      6      7
